@@ -50,6 +50,7 @@ services:
       target: 80
     volumes:
     - ${PWD}/movim:/var/www/html:ro
+    - ${PWD}/nginx:/etc/nginx/conf.d/:ro
   postgresql:
     environment:
       POSTGRES_DB: movim
